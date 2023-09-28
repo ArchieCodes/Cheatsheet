@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet project for attributes
+    </title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+    <header class="title">
+        <h1 >Cheat sheet HTML/CSS</h1>
+    </header> 
+
+    <!--Here will be main nav bar-->
+    <nav class="navigationM">
+        <ul>
+            <li><a href="#CSS">CSS</a></li> 
+            <li><a href="#html">HTML</a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+
+    <section>
+
+        <h1 class="section_heading" id="html">HTML tags</h1>
+
+    <!--Here will be secondary nav bar-->
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#tableh1"><span>HTML/basic</span></a></li>
+                <li><a href="#tableh2"><span>HTML/Table</span></a></li>
+                <li><a href="#tableh3"><span>HTML/List</span></a></li>
+                <li><a href="#tableh4"><span>HTML/Semantic</span></a></li>
+            </ul>
+            
+        </nav>
+
+        <h2 class="table1H" id="tableh1">HTML basic tags</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Documentation</th>
+                    <th>Description</th>
+                </tr>    
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;!DOCTYPE html&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype" target="_blank">MDN</a></td>
+                    <td>This declaration is an instruction, and it must be the first line of code in your HTML document. It tells the browser what type of document to expect, along with what version of HTML is being used in the document. For now, the browser will correctly assume that the html in !DOCTYPE html is referring to HTML5, as it is the current standard.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;html&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">MDN</a></td>
+                    <td>Anything between the opening html and closing /html tags will be interpreted as HTML code. Without these tags, it’s possible that browsers could incorrectly interpret your HTML code.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;head&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">MDN</a></td>
+                    <td>The head element contains the metadata for a web page. Metadata is information about the page that isn’t displayed directly on the web page. Unlike the information inside of the body tag, the metadata in the head is information about the page itself. </td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;body&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank">MDN</a></td>
+                    <td>The body tag defines the document's body. The body element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</td>
+                </tr>                
+                <tr>
+                    <td><span class="code">&lt;div&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">MDN</a></td>
+                    <td>The div tag defines a division or a section in an HTML document. The div tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. The div tag is easily styled by using the class or id attribute. Any sort of content can be put inside the div tag.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;h1-h6&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">MDN</a></td>
+                    <td>The h1 to h6 tags are used to define HTML headings. h1 defines the most important heading. h6 defines the least important heading.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;p&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">MDN</a></td>
+                    <td>The p tag defines a paragraph. Browsers automatically add a single blank line before and after each p element.</td>
+                </tr>
+
+                <tr>
+                    <td><span class="code">&lt;em&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">MDN</a></td>>
+                    <td>The em tag is used to define emphasized text. The content inside is typically displayed in italic. A screen reader will pronounce the words in em with an emphasis, using verbal stress.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;strong&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">MDN</a></td>
+                    <td>The strong tag is used to define text with strong importance. The content inside is typically displayed in bold.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;img&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">MDN</a></td>
+                    <td>The img tag is used to embed an image in an HTML page. It is a self closing tag. Requires src and alt attributes(src is location of storagte and alt is descriptive text incase the image doesn't render for some reason.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;video&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">MDN</a></td>
+                    <td>The video tag is used to embed video content in a document, such as a movie clip or other video streams. The video tag contains one or more source tags with different video sources. The browser will choose the first source it supports. The text between the video and video tags will only be displayed in browsers that do not support the video element. There are three supported video formats in HTML: MP4, WebM, and OGG.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="table1H" id="tableh2">HTML Table Tags</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Documentation</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;table&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">MDN</a></td>
+                    <td>HTML table wrapper - tells browser to expect an HTML table</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;thead&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">MDN</a></td>
+                    <td>Set of rows defining table heads in colummn</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;tbody&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">MDN</a></td>
+                    <td>Set of rows containing the actual data in table</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;th&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" target="_blank">MDN</a></td>
+                    <td>Defines a cell as the header of a group of table cells.</td>
+                </tr>                
+                <tr>
+                    <td><span class="code">&lt;tr&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">MDN</a></td>
+                    <td>Table row container</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;td&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">MDN</a></td>
+                    <td>Table data container</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;tfoot&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank">MDN</a></td>
+                    <td>Table foot container - can be used for summaries(total amounts etc.)
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h2 class="table1H" id="tableh3">HTML List tags</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Documentation</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;ol&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">MDN</a></td>
+                    <td>Starts a list, that's organized by number - this is useful for creating guides with numbered steps, or listing a ranking and so on.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;ul&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">MDN</a></td>
+                    <td>Starts a list, that's not organized by any attribute. Useful for creating lists of things in no particular order(ingredients of a recipe, for example)</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;li&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">MDN</a></td>
+                    <td>Individual item in a list.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="table1H" id="tableh4">HTML Semantic tags</h2>
+
+        <table class="bottom_tableH">
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Documentation</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;header&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank">MDN</a></td>
+                    <td>A header is a container usually for either navigational links or introductory content containing h1 to h6 headings.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;nav&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">MDN</a></td>
+                    <td>A nav is used to define a block of navigation links such as menus and tables of contents. It is important to note that nav can be used inside of the header element but can also be used on its own.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;main&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">MDN</a></td>
+                    <td>The element main is used to encapsulate the dominant content within a webpage. This tag is separate from the footer and the nav of a web page since these elements don’t contain the principal content. By using main as opposed to a div element, screen readers and web browsers are better able to identify that whatever is inside of the tag is the bulk of the content.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;footer&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">MDN</a></td>
+                    <td>The element, that displays the content at the bottom of the page-typically used for copyright info, contact lists, service terms etc.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;section&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">MDN</a></td>
+                    <td>Section defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. For example, content with the same theme such as articles about cricket can go under a single section. A website’s home page could be split into sections for the introduction, news items, and contact information.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;article&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">MDN</a></td>
+                    <td>The article element holds content that makes sense on its own. Article can hold content such as articles, blogs, comments, magazines, etc. An article tag would help someone using a screen reader understand where the article content (that might contain a combination of text, images, audio, etc.) begins and ends.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;aside&gt;</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">MDN</a></td>
+                    <td>The aside element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. Commonly used for additional information, quotes, comments etc.</td>
+                </tr>
+            </tbody>
+            </table>
+    </section>
+    
+    <section>
+        <h1 class="section_heading" id="CSS">CSS Properties and functionalities</h1>
+    <!--Here will be secondary nav bar-->
+    
+            <nav class="navigation">
+       
+        <ul>
+            <li><a href="#table1css"><span>CSS/text</span></a></li>
+            <li><a href="#table2css"><span>CSS/color</span></a></li>
+            <li><a href="#table3css"><span>CSS/Display</span></a></li>
+            <li><a href="#table4css"><span>CSS/Positioning</span></a></li>
+            <li><a href="#table5css"><span>CSS/Box model</span></a></li>
+            <li><a href="#table6css"><span>Button/Nav</span></a></li>
+        </ul>
+        
+    </nav>
+        
+    <h2 class="table1H" id="table1css">CSS Basic text properties</h2>
+
+    <table>
+        <thead>
+            <tr> 
+                <th>Property</th>
+                <th>Documentation</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">font-family</span></td>
+                <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">MDN</a></td>
+                <td>Specified the typeface used for the text in the selector. You can specify set fonts(which can be web safe or imported) or set a generic serif(Extra details on the ends of main strokes for letters) or sans-serif(no details on ends of strokes) selection - then browser picks just whatever works within the specified font-family.</td>
+            </tr>
+            <tr>
+                <td><span class="code">font-weight</span></td>
+                <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" target="_blank">MDN</a></td>
+                <td>The font-weight property controls how bold or thin text appears.</td>
+            </tr>
+            <tr>
+                <td><span class="code">font-size</span></td>
+                <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">MDN</a></td>
+                <td>Changes the size of text on your web page. You can use absolute size values(xx-small, x-small, small, medium, large, x-large etc.), relative size ones(larger, smaller), math, percentage and length(px, em, rem) values.</td>
+            </tr>
+            <tr>
+                <td><span class="code">text-align</span></td>
+                <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">MDN</a></td>
+                <td>The text-align property places text in the left, right, or center of its parent container(can also be spaced out using justify).</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h2 class="table1H" id="table2css">CSS Basic color properties</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Documentation</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">color</span></td>
+                <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color" target="_blank">MDN</a></td>
+                <td>Specifies the color of the text in the selector. You can use named colors, rgb, hsl and hexadecimal values. Named color range is limited(145 exist at this moment).</td>
+            </tr>
+            <tr>
+                <td><span class="code">background-color</span></td>
+                <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">MDN</a></td>
+                <td>Specified background color in selector. Same color type selecation applies, that the regular color property had..</td>
+            </tr>
+            <tr>
+                <td><span class="code">opacity</span></td>
+                <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity" target="_blank">MDN</a></td>
+                <td>The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.Opacity applies to the element as a whole, including its contents, even though the value is not inherited by child elements. Thus, the element and its children all have the same opacity relative to the element's background, even if they have different opacities relative to one another.</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+        <h2 class="table1H" id="table3css">CSS Display properties</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Documentation</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">display: inline</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">MDN</a></td>
+                    <td>Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">display: block</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">MDN</a></td>
+                    <td>These elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">display: inline-block</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">MDN</a></td>
+                    <td>Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties. Images are the best example of default inline-block elements.</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <h2 class="table1H" id="table4css">CSS Positioning properties</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Documentation</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">position: static</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">MDN</a></td>
+                    <td>Default position, no changes to expected position.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">position: relative</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">MDN</a></td>
+                    <td>This value allows you to position an element relative to its default static position on the web page. Need to add offset property to have this declaration do something.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">position: absolute</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">MDN</a></td>
+                    <td>When an element’s position is set to absolute, all other elements on the page will ignore the element and act like it is not present on the page. The element will be positioned relative to its closest positioned parent element, while offset properties can be used to determine the final position from there.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">position: fixed</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">MDN</a></td>
+                    <td>We can fix an element to a specific position on the page (regardless of user scrolling) by setting its position to fixed, and accompanying it with the familiar offset properties top, bottom, left, and righ</td>
+                </tr>
+                <tr>
+                    <td><span class="code">position: sticky</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">MDN</a></td>
+                    <td>The sticky value is another position value that keeps an element in the document flow as the user scrolls, but sticks to a specified position as the page is scrolled further. This is done by using the sticky value along with the familiar offset properties, as well as one new one.</td>
+                </tr>
+            </tbody>
+            </table>
+
+
+        <h2 class="table1H" id="table5css">CSS Box-model properties</h2>
+
+        <table class="bottom_table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Documentation</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">box-model: content-box</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model" target="_blank">MDN</a></td>
+                    <td>The default value of this property. This is the same box model that is affected by border thickness and padding.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">box-model: border-box</span></td>
+                    <td><a class="DOC" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model" target="_blank">MDN</a></td>
+                    <td>In this box model, the height and width of the box will remain fixed. The border thickness and padding will be included inside of the box, which means the overall dimensions of the box do not change.</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+            <h2 class="table1H" id="table6css">Very basic button/breadcrumb examples</h2>
+
+            <div class="navcrumb">                
+                <ul class="buttonnav">
+                    <li><button class="flat">Flat</button></li>
+                    <li><button class="skeuomorphic">Skeuomorphic</button></li>
+                </ul>
+
+                <ul class="breadcrumb">
+                    <li class="location"><a href="">Main</a></li>
+                    <li class="location"><a href="">Sub1</a></li>
+                    <li class="location"><a href="">Sub2</a></li>
+                    <li class="category"><a href="">Category filter</a></li>
+                </ul>
+
+                <ul class="breadcrumb2">
+                    <li class="location1"><a href="">Basic</a></li>
+                    <li class="location1"><a href="">Sub1</a></li>
+                    <li class="location1"><a href="">Sub2</a></li>
+                    <li class="location1"><a href="">Sub3</a></li>
+                </ul>
+
+            </div>
+    </section>
+
+
+</main>
+
+</body>
+</html>

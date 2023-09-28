@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.title {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.navigationM {
+    width:100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color:black;
+    color:white;
+    z-index: 2;
+}
+
+.navigationM li {
+    word-spacing: 20px;
+    text-align: right;
+    font-size: 1.6em;
+    font-weight: bold;
+    float: right;
+    clear: left;
+    padding-right: 10px;
+    padding-bottom:10px;
+    list-style-type: none;
+}
+
+.navigationM li:hover, nav span:hover  {
+    text-decoration: underline;
+}
+
+.navigation {
+    background-color:black;
+    color:white;
+    transform: skew(16deg);
+    margin: 10px;
+}
+
+.navigation li {
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-right: 1px solid white;
+    font-weight: bold;
+    cursor: grab;
+}
+
+nav span {
+    display: block;
+    transform: skew(-16deg);
+    cursor:grab;
+  }
+
+
+
+.section_heading {
+    font-weight: bold;
+    font-size: 45px;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px;
+    border: 3px solid black;
+    transform: skew(16deg);
+    display: block;
+}
+
+.table1H {
+    width:100%;
+    text-align: center;
+    margin: auto;
+    padding: 10px 20px 25px;
+    font-size: 30px;
+}
+
+table {
+    border: 2px solid black;
+    width: 100%;
+    min-height: 200px;
+    margin: 10px auto;
+    max-width: 1800px;
+}
+
+th, td {
+    border: 1px solid grey;
+    min-width: 200px;
+  }
+
+.code {
+    font-family: monospace;
+    background-color: gainsboro;
+    margin: 10px;
+}
+
+.DOC {
+    color: blue;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.DOC:hover {
+    text-decoration: none;
+}
+
+.DOC:active {
+    color:black;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+.bottom_tableH {
+    margin-bottom: 30px;
+}
+
+.buttonnav, .breadcrumb, .breadcrumb2 {
+    list-style-type: none;
+}
+
+.navcrumb {
+    display: flex;
+    align-items: center;
+}
+
+.buttonnav li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.skeuomorphic {
+    border: 1px solid black;
+    color:#d8dde6;
+    background-color: #101314;
+    border-radius: 10px;
+    box-shadow: 0px 5px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.skeuomorphic:active {
+    margin-top: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px;
+}
+
+.flat {
+    border: 1px solid #36454f;
+    color:white;
+    background-color: #101314;
+    border-radius: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.flat:active {
+    border: 1px solid #101314;
+    color:#101314;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 40px;
+} 
+
+.breadcrumb {
+    text-align: left;
+}
+
+.breadcrumb li {
+   display: inline-block;
+}
+
+
+.breadcrumb a {
+    float: left;
+    color: #fff;
+    background: black;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding: 0 5px;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.category a {
+    color: whitesmoke;
+    opacity:0.8;
+  }
+
+  .category a::after {
+    content: "x";
+    font-size: 8px;
+    vertical-align: super;
+  }
+
+.breadcrumb .location a::before,
+.breadcrumb .location a::after {
+  content: "";
+  position: absolute;
+  border-color: black;
+  border-style: solid;
+  border-width: 15px 5px;
+}
+
+.breadcrumb .location a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: black;
+  }
+
+.breadcrumb .location a::before {
+    left: -10px;
+    border-left-color: transparent;
+  }
+
+  .breadcrumb .location a:hover {
+    background-color: white;
+    text-decoration: underline;
+    color: black;
+  }
+  .breadcrumb .location a:hover::before {
+    border-color: white;
+    border-left-color: transparent;
+  }
+  .breadcrumb .location a:hover::after {
+    border-left-color: white;
+  }
+
+  .breadcrumb2 a {
+    color:black;
+  }
+
+  .breadcrumb2 li {
+    display: inline;
+    font-weight: bold;
+  }
+  
+  .breadcrumb2 li+li::before {
+    content: ">";
+    color: black;
+  }
+  
+  .breadcrumb2 a:hover {
+    text-decoration: underline;
+  }
